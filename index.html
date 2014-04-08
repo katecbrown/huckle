@@ -3,21 +3,31 @@
 	
 	<head>
 		<meta charset="utf-8">
-		<title>Huckle Buckle Beanstalk</title>
+		<title>Huckle Buckle Beanstalk: A Number Guessing Game</title>
 		<link href="styles.css" type="text/css" rel="stylesheet">
 	</head>
 
 	<body>
 
-	<h1>Huckle Buckle Beanstalk</h1>
+		<div id="main">
 
-	<p>Enter a number between 1 and 100.</p>
+			<h1>Huckle Buckle Beanstalk</h1>
 
-	<input type="text" id="guess">
+			<h2>A Number Guessing Game</h2>
 
-	<button type="button" onClick="validateInput()">Submit</button>
+			<p>Try to guess the secret number! Enter a number between 1 and 100.</p>
 
-	<button type="button" onClick="newGame()">New Game</button>	
+			<input type="text" id="guess">
+
+			<button type="button" onClick="validateInput()">Submit</button>
+
+			<button type="button" onClick="newGame()">New Game</button>	
+
+			<div id="alerts">
+
+			</div>
+
+		</div>
 
 	</body>
 

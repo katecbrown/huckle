@@ -49,6 +49,21 @@ table {
 
 /* Styles by Kate */
 
+#main {
+	width: 400px;
+	margin: 0 auto;
+}
+
 h1 {
 	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+p {
+	margin: 5px 0px;
 }
