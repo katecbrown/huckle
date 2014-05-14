@@ -11,6 +11,7 @@ console.log("The secret number is " + randomNumber);
 // Make sure user entered a number
 
 function validateInput() {
+	
 	var guess = document.getElementById('guess').value;
 	if (guess === "" || isNaN(guess)) {
 		document.getElementById('alerts').innerHTML="Please enter a number.";
@@ -27,7 +28,7 @@ function validateInput() {
 // If guess is wrong, give feedback about whether it's a closer guess than the last one
 
 function checkGuess() {
-	document.getElementById('alerts').innerHTML="";
+
 	var guess = document.getElementById('guess').value;
 	console.log("The user's guess is " + guess);
 
@@ -57,7 +58,7 @@ function checkGuess() {
 			} else if (difference < previousDiff) {
 				document.getElementById('alerts').innerHTML="You're getting warmer. Guess again!";
 			} else if (previousDiff == difference) {
-				document.getElementById('alerts').innerHTML="You guessed the same. Guess again!";
+				document.getElementById('alerts').innerHTML="Your guess isn't any warmer or colder than last time. Guess again!";
 			} else {
 				document.getElementById('alerts').innerHTML="You got it!";
 			}
